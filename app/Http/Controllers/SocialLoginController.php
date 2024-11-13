@@ -33,6 +33,6 @@ class SocialLoginController extends Controller
                 'provider_token' => $user->token
             ]);
         }
-        return view('welcome');
+        return redirect()->route('welcome.page');
     }
 }
